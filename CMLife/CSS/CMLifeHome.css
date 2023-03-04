@@ -1,0 +1,357 @@
+/* Estilização da página intera. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFFFFF;
+}
+.limita-area{
+    width: 1024px;
+    margin: 0 auto;
+}
+.limita-container, .informacoes-especialidades{
+    width: 741px;
+    margin: 0 auto;
+}
+
+/* 1° serção - Estilização do cabeçalho. */
+header{
+    width: 100%;
+    background-color: #00CAD1;
+    box-sizing: border-box;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.cabecalho img{
+    width: 150px;
+}
+.cabecalho a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 10px;
+}
+.cabecalho a:hover{
+    color: #004B4C;
+}
+
+/* 2° serção - Estilização do banner. */
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url("imgCSS/recepcao.png");
+    background-size: cover;
+    background-position: center;
+}
+.banner-titulo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.banner-titulo h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Estilização do sub-título h2 e páragrafo p */
+h2, p{
+    text-align: center;
+    color: #0000008c;
+}
+h2{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* 3° serção - Estilização sobre */
+.lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.lista img{
+    width: 250px;
+}
+.container-lista{
+    display: row;
+    justify-content: center;
+}
+.container-lista h3{
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #A9A5A5;
+    padding-top: 30px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+.container-lista ul{
+    font-size: 20px;
+    padding: 30px 0;
+    margin-left: 55px;
+    box-sizing: border-box;
+}
+.container-lista ul li span{
+    line-height: 30px;
+    color: #A9A5A5;
+}
+.container-lista ul li{
+    color: #848384;
+}
+
+/* 4° serção - Estilização da serção especialidades. */
+
+.box-especialidades{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box-especialidade{
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 50%);
+}
+.box-especialidades img{
+    width: 100%;
+}
+.box-especialidades figcaption{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: #A9A5A5;
+}
+.link-horario{
+    width: 126px;
+    text-align: center;
+    background-color: #00CAD1;
+    padding: 10px;
+    margin: 0 auto;
+}
+.link-horario a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+/* 5° serção - Estilização da serção contato. */
+#contato p{
+    margin-bottom: 10px;
+}
+.negrito{
+    font-weight: bold;
+    color: #848384;
+}
+iframe{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+}
+
+/* 6° serção - Estilização do rodapé. */
+footer{
+    background-color: #0D6E71;
+    padding: 30px 0;
+}
+footer a{
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    width: 150px;
+}
+footer p{
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+.aluno{
+    padding: 10px 0;
+    background-color: #FFFFFF;
+}
+.aluno span{
+    color: #0D6E71;
+}
+
+/* Estilização da página responsivas usando a propriedade Media Queries */
+/* Estilização para telas de resolução de ate 425px. */
+@media (max-width: 425px){
+    
+    .limita-container{
+        width: 100%;
+    }
+
+    /* 1° serção - cabeçalho */
+    .cabecalho{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .link-topo{
+        border-top: 1px solid #009FA6;
+        justify-content: space-around;
+        padding: 10px 20px 10px 0;
+    }
+
+    /* 2° serção - Banner */
+    .banner{
+        height: 200px;
+    }
+    .banner h1{
+        font-size: 28px;
+        padding-left: 10px;
+    }
+
+    /* Estilização dos conteúdos e títulos h2 e páragrafos p */
+    .limita-area, .limita-container{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 3° serção - Sobre */
+    .container-lista, .lista{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #sobre figure{
+        display: none;
+        margin: 0;
+    }
+    .lista h3{
+        text-align: center;
+        font-size: 18px;
+    }
+    .container-lista ul li{
+        font-size: 18px;
+    }
+
+    /* 4° serção - Especialidades */
+    #especialidades{
+        width: 100%;
+    }
+    .box-especialidade{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Estilização para telas de resolução de ate 768px. */
+@media (min-width: 426px) and (max-width: 768px){
+
+    /*  1° serção - Estilização do cabeçalho. */
+    .header{
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .cabecalho{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 2° serção - Estilização do banner. */
+    .banner{
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .banner h1{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    /* Estilização dos conteúdos e do sub-título h2 e páragrafos p */
+    .limita-area{
+        width: 100%;
+    }
+    h2{
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    p{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 3° serção - Estilização do sobre. */
+    #sobre, .container-lista, .lista{
+        width: 100%;
+        margin: 0;
+    }
+    #sobre img{
+        display: none;
+    }
+    .container-lista h3{
+        font-size: 22px;
+        text-align: center;
+        margin: 0;
+    }
+    .lista ul{
+        margin-left: 27%;
+    }
+    ul li{
+        font-size: 18px;
+    }
+
+    /* 4° serção - Estilização da serção especalização */
+    .box-especialidades{
+        justify-content: center;
+    }
+    .box-especialidade{
+        width: calc(100% / 2 - 40px);
+    }
+}
+
+/* Estilização para telas de resolução de ate 1024px. */
+@media (max-width: 1024px){
+
+    /* 1° serção - Estilização do cabecalho. */
+    header{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .cabecalho{
+        width: 100%;
+    }
+
+    /* 2° serção - Estilização do banner. */
+    .banner{
+        height: 400px;
+    }
+}
